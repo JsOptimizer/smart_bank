@@ -7,25 +7,29 @@ import { Image, Text, View } from "react-native";
 export default function Index() {
   return (
     <Fragment>
-      <View className="items-center justify-center w-full px-4 h-full bg-neutral-50">
-        <View>
-          <Text className="text-brand-600 font-apparat-bold text-4xl text-center">
-            Welcome to SmartBank
-          </Text>
-          <Text className="text-center font-apparat-semibold text-neutral-700 text-lg">
-            Your money , your way , anywhere , anytime.
-          </Text>
-        </View>
+      <View className="px-4 h-dvh">
         <Image
           source={onboarding}
           resizeMode="contain"
-          className=" w-[300px] h-[290px]"
+          className=" w-full mt-14 h-[290px]"
         />
-        <Text className="text-neutral-800">
-          Track your balance, send money securely, and stay in control with just
-          a few taps.
-        </Text>
-        <CustomButton title="Let’s get started!" buttonStyle="mt-10" />
+        <View className="h-[45vh]  ">
+          <View className="gap-4">
+            <View>
+              <Text className="text-brand-600 font-apparat-bold text-4xl text-center">
+                Welcome to SmartBank
+              </Text>
+              <Text className="text-center font-apparat-semibold text-neutral-700 text-lg">
+                Your money , your way , anywhere , anytime.
+              </Text>
+            </View>
+            <Text className="text-neutral-800 text-center">
+              Track your balance, send money securely, and stay in control with
+              just a few taps.
+            </Text>
+          </View>
+          <CustomButton title="Let’s get started!" buttonStyle="mt-auto" />
+        </View>
       </View>
       <StatusBar style="inverted" backgroundColor="#0404fc" />
     </Fragment>
