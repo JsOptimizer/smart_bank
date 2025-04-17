@@ -23,6 +23,11 @@ module.exports = {
           950: "#050533",
         },
       },
+      fontFamily: {
+        ["apparat"]: "apparat",
+        ["apparat-semibold"]: "apparat-semibold",
+        ["apparat-bold"]: "apparat-bold",
+      },
     },
   },
   plugins: [],

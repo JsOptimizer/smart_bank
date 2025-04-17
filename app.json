@@ -32,6 +32,16 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Apparat_Bold.otf",
+            "./assets/fonts/Apparat_Regular.otf",
+            "./assets/fonts/Apparat_Semibold.otf"
+          ]
+        }
       ]
     ],
     "experiments": {
